@@ -21,6 +21,32 @@
         molestias modi tenetur libero nulla! Repellat quo excepturi incidunt distinctio corrupti culpa, laborum ducimus dolore? Sapiente!</p>
 </div>
 
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-backdrop="false">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal  fade  p-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-xl bg-light">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <div class="container bg-primary text-danger rounded-top-4 w-50">
 
     <p class="text-bg-primary">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -37,6 +63,11 @@
            quibusdam harum omnis mollitia ducimus rerum quis recusandae necessitatibus molestias nobis placeat eveniet fugit praesentium similique? 
            Rem sit ab excepturi? Neque eum, dolorem beatae illo harum sunt vitae dolor.
     </p>
+</div>
+
+<div class="alert alert-danger alert-dismissible fade show">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Success!</strong> Indicates a successful or positive action.
 </div>
 
 <div class="container-fluid">
@@ -59,14 +90,114 @@
 
 </div>
 
-<div class="card" style="width: 18rem;">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <div class="card-body text-center">
+<div class="d-flex">
+  <div class="card " style="width: 18rem;">
+    <img src="img/Nature_img3.jpg" class="card-img-top" alt="">
+    <div class="card-body text-center card-img-overlay">
       <h5 class="card-title ">Card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       <a href="#" class="btn btn-primary " data-bs-toggle="tooltip" title="Hai">Go somewhere</a>
     </div>
   </div>
+
+  <div class="card " style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-danger">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+ 
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://placehold.jp/200x150.png" class="card-img-top" alt="...">
+    <h3 class="card-header">Featured</h3>
+  
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    
+    <img src="https://placehold.jp/150x150.png" class="" alt="...">
+    <h3 class="card-header">Featured</h3>
+    <div class="card-body  card-img-overlay">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">An item</li>
+      <li class="list-group-item">A second item</li>
+      <li class="list-group-item">A third item</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- card-toolbar  -->
+<div class="card">
+  <div class="card-body">
+    <!-- Card Content -->
+  </div>
+  <div class="card-footer">
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Left side of the "toolbar" -->
+        <button class="btn btn-primary">Action 1</button>
+        <button class="btn btn-secondary">Action 2</button>
+      </div>
+      <div class="col-md-6 text-end">
+        <!-- Right side of the "toolbar" -->
+        <button class="btn btn-info">Action 3</button>
+        <button class="btn btn-danger">Action 4</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- card nav bar -->
+
+<div class="card">
+  <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+              <a class="nav-link active" href="https://getbootstrap.com/docs/5.3/components/card/#about">link1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="...">link2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="...">link3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="...">link4</a>
+    </li>
+      </ul>
+  </div>
+</div>
+
+
+
+<div class="d-flex bg-success">
+  <div class="p-2 flex-fill">Flex item with a lot of content</div>
+  <div class="p-2 flex-fill">Flex item</div>
+  <div class="p-2 flex-fill">Flex item</div>
+</div>
+
+
 
 
 
