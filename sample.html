@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Anaz">
     <title> Sample Website </title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/samplecss.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,11 +14,33 @@
 </head>
 
 <body>
+
+  <svg width="100%" height="600" viewBox="0 0 100% 600" >
+
+    <defs>
+      <mask id="myMask">
+        <text fill="white" x="50%" y="50%"
+        font-size="245px" font-weight="800" text-anchor="middle" alignment-baseline="middle"
+        stroke="black" stroke-width="2">
+          Web Diary
+        </text>
+      </mask>
+    </defs>
+
+    <image class="img" xlink:href="img/Nature_img3.jpg" width="100%" mask="url(#myMask)">
+
+    </image>
+
+  </svg>
+
+  <div class="divImg" style="width: 50%;">
+    <img src="img/sample svg.svg" style="width: 50%; ;">
+  </div>
  
 
-<div class="container bg-dark text-danger">
+<div class="container my-4 bg-dark text-danger border border-4 border-danger outline-2" style="outline: thick solid rgb(30, 16, 221) ;">
 
-    <p class="text-bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur earum autem repellat eius, 
+    <p class="text-bg-dark ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aspernatur earum autem repellat eius, 
         molestias modi tenetur libero nulla! Repellat quo excepturi incidunt distinctio corrupti culpa, laborum ducimus dolore? Sapiente!</p>
 </div>
 
@@ -192,11 +215,38 @@
 
 
 
-<div class="d-flex bg-success">
-  <div class="p-2 flex-fill">Flex item with a lot of content</div>
-  <div class="p-2 flex-fill">Flex item</div>
-  <div class="p-2 flex-fill">Flex item</div>
+<div class="d-flex  mb-4 ">
+  <div class="p-2 bg-info flex-grow-1">Flex item with a lot of content</div>
+  <div class="p-2 bg-success ">Flex item</div>
+  <div class="p-2 bg-warning flex-fill">Flex item</div>
 </div>
+
+<!-- table -->
+
+<table bgcolor="yellow" border="5" cellpadding="5" align="center">
+  <colgroup class="">
+    <col span="2">
+    <col span="2">
+  </colgroup>
+  <tr>
+    <th colspan="2">ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+   
+  </tr>
+  <tr>
+    <td rowspan="2">3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+   
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+    <td>$53</td>
+  </tr>
+</table>
 
 
 

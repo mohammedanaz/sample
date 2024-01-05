@@ -1,0 +1,10 @@
+tr:nth-child(even){
+    background-color: aqua;
+}
+
+
+svg{
+    outline: 1px solid red;
+    
+}
+
