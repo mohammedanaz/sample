@@ -8,3 +8,11 @@ svg{
     
 }
 
+.flex-div{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    
+}
+
