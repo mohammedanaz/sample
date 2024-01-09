@@ -15,12 +15,30 @@
 
 <body>
 
+  <div style="width: 400px; height: 400px; margin: auto; margin-bottom: 50px; background-color: gray;">
+    <input id="id-btn-hide" type="button" class="btn btn-success d-block mx-auto mb-4" value="click to hide/unhide" onclick="fnHideDiv()">
+    <div id="id-div-hide" class="w-50 h-50 mx-auto bg-primary">
+
+    </div>
+  </div>
 
 
-  <div class="flex-div">
-    <h1>hai</h1>
-    <h3>hai</h3>
-    <h6>hai</h6>
+  <div  style="width: 400px; height: 400px; margin: auto; background-color: gray;">
+    <button class="btn btn-danger d-block mx-auto mt-4" data-bs-toggle="collapse" data-bs-target="#collapse-div" type="button" >Click me</button>
+    <div id="collapse-div" class="collapse w-50 h-50 bg-info mx-auto">
+
+    </div>
+  </div>
+
+
+
+  <div class="d-flex div-1" style="background-color: yellow; width: 800px; height: 500px; margin: auto;">
+    <div class="w-50 h-50 div-2 d-flex" style="background-color: red; margin: auto;">
+       <div><p class="text-bg-success">para1</p></div>
+       <div><p class="text-bg-success">para2</p></div>
+       <div><p class="text-bg-success">para3</p></div>
+    </div>
+
   </div>
 
   <svg width="100%" height="600" viewBox="0 0 100% 600" >
@@ -261,6 +279,21 @@
 
 
     <!-- JS -->
+
+    <script>
+      
+      var div = document.getElementById("id-div-hide");
+
+      function fnHideDiv(){
+        if(div.style.display=="block" || div.style.display==""){
+          div.style.display= "none";
+        }
+        else{
+          div.style.display= "block";
+        }
+      }
+    </script>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 </body>
