@@ -15,6 +15,28 @@
 
 <body>
 
+  <div class="main-container" style="background-color: lightgray; height: 500px;" >
+    <div class="myNavBox" style="display: flex; ">
+      <ul class="myNavUl" style="list-style: none;width: 80%;">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+      <i id="toggleBtn" class="fa fa-bars" ></i>
+    </div>
+    
+    
+      <ul id="id-myNavUl-block" class="myNavUl-block" style="list-style: none; ">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+      </ul>
+    </div>
+
+ 
+
   <div style="width: 400px; height: 400px; margin: auto; margin-bottom: 50px; background-color: gray;">
     <input id="id-btn-hide" type="button" class="btn btn-success d-block mx-auto mb-4" value="click to hide/unhide" onclick="fnHideDiv()">
     <div id="id-div-hide" class="w-50 h-50 mx-auto bg-primary">
@@ -279,6 +301,20 @@
 
 
     <!-- JS -->
+
+    <script>
+      var toggleBtn = document.getElementById("toggleBtn");
+      var myDivId = document.getElementById("id-myNavUl-block");
+
+      toggleBtn.addEventListener("click",toggleDiv)
+
+      function toggleDiv(){
+        myDivId.classList.toggle("active");
+      }
+    </script>
+
+
+
 
     <script>
       

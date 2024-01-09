@@ -22,3 +22,78 @@ svg{
     
 }
 
+.myNavBox{
+    justify-content: space-between;
+}
+
+.myNavUl{
+    display: flex;
+    justify-content: center;
+}
+
+.myNavUl li{
+    display: inline;
+    background-color: lightgreen;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.myNavBox i{
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none;
+}
+
+.myNavUl-block{
+    
+    position: fixed;
+    right: -1500px;
+    width: 90%;
+    height: 15vw;
+    transition: right 1s ease;
+}
+
+.myNavUl-block li{
+    background-color: lightskyblue;
+    padding: 15px 40px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.myNavUl-block.active{
+    right: 10px;
+}
+
+
+
+
+
+/* MQ */
+
+
+@media(max-width:1000px){
+
+    .myNavBox i{
+        display: inline;
+    }
+
+    .myNavUl{
+        display: none;
+    }
+
+    .myNavBox{
+        justify-content:end;
+    }
+
+}
+
+@media(min-width:1000px){
+
+    .myNavUl-block.active{
+        display: none;
+    }
+}
