@@ -7,12 +7,29 @@
 
 </head>
 <body>
-    <p id="demo"></p>
+    <h1 id="demo"></h1>
+    <button id="btn">clickMe</button>
 
 <script>
-  d = new Date(2024, 5, 11)
-  document.getElementById("demo").innerHTML = d
-
+  let obj1 = {
+    name : 'Anaz',
+    age : 40
+  }
+  let obj2 = {
+    greet : function(){
+      console.log(`I am ${this.name}, ${this.age} years old.`);
+    }
+  }
+  let obj3 = {
+    bye: function(){
+      console.log('Bye');
+    }
+  }
+  Object.setPrototypeOf(obj1, obj2)
+  obj1.greet();
+  Object.setPrototypeOf(obj1, obj3)
+  obj1.bye()
+  obj1.greet()
 </script>
 </body>
 </html>
